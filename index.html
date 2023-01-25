@@ -2,17 +2,17 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Город Седона</title>
   </head>
 
   <body>
     <header class="page-header">
-      <a href="#"><img class="logo" src="#" alt="Логотип сайта Седона" /></a>
+      <a class="navigation-logo" href="#"><img class="logo" src="#" alt="Логотип сайта Седона" /></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -51,40 +51,54 @@
       </section>
       <section class="advantages">
         <h3 class="visually-hidden">Преимущества</h3>
-        <img class="decor house" src="#" alt="Дом" />
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+            <div>
+              <h3 class="advantages-title">Настоящий городок</h3>
+              <p class="advantages-description">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <div>
+              <img class="decor house" src="#" alt="Дом" />
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая площадь</h3>
-            <p class="advantages-description">
-              Все достопримечательности находятся очень близко
-            </p>
+            <div>
+              <h3 class="advantages-title">Небольшая площадь</h3>
+              <p class="advantages-description">
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Красивая дорога</h3>
-            <p class="advantages-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+            <div>
+              <h3 class="advantages-title">Красивая дорога</h3>
+              <p class="advantages-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Мало туристов</h3>
-            <p class="advantages-description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+            <div>
+              <h3 class="advantages-title">Мало туристов</h3>
+              <p class="advantages-description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+            <div>
+              <img class="decor bridge" src="#" alt="Мост дьявола" />
+            </div>
+            <div>
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <p class="advantages-description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
           </li>
         </ul>
-        <img class="decor bridge" src="#" alt="Мост дьявола" />
       </section>
       <section class="city-info travel">
         <h2 class="travel-title">
@@ -129,6 +143,8 @@
         </p>
         <button class="bookroom-button button" type="button">Поиск гостиницы в Седоне</button>
       </section>
+    </main>
+    <footer class="page-footer">
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка</h3>
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -139,8 +155,6 @@
           <button class="subscribe-button button" type="button">Подписаться</button>
         </form>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="footer-social">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="footer-social-list">
@@ -164,7 +178,10 @@
       <h3 class="visually-hidden">Телефон</h3>
       <p class="footer-phone">+7 (812) 812-12-12</p>
       <h3 class="visually-hidden">Логотип автора</h3>
-      <img class="logo-creator" src="#" alt="Логотип htmlacademy" />
+      <a class="logo-creator-link" href="https://htmlacademy.ru/">
+        <img class="logo-creator" src="#" alt="Логотип htmlacademy" />
+      </a>
     </footer>
   </body>
+
 </html>
