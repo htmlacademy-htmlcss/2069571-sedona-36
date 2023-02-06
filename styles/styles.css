@@ -10,7 +10,7 @@
   font-family: "PT Sans";
 
   font-display: swap;
-  src: url("/fonts/ptsans-400.woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: "PT Sans";
 
   font-display: swap;
-  src: url("/fonts/ptsans-700.woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
 img {
@@ -170,6 +170,10 @@ body {
   background: rgba(131, 179, 211, 0.12);
 }
 
+.booking {
+  text-align: center;
+}
+
 .subscribe-home {
   text-align: center;
   color: #ffffff;
@@ -182,6 +186,12 @@ body {
 
 .subscribe-form-pure {
   text-align: center;
+}
+
+.subscribe-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .filter {
@@ -198,10 +208,17 @@ body {
   color: #ffffff;
 }
 
-.breadcrumbs-link a {
+.filter-range-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color: #ffffff;
 }
 
 .filter-title {
@@ -233,11 +250,14 @@ body {
   color: #333333;
 }
 
-.variant-item a {
+.variant-link-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.variant-item a {
   text-decoration: none;
 }
 
@@ -256,7 +276,7 @@ body {
   text-transform: uppercase;
 }
 
-.pagination-item a {
+.pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -264,20 +284,34 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  background: #82b3d3;
+  border-radius: 4px;
 }
 
-.pagination-current a {
+.pagination-current {
   color: #000000;
+
+  background: #f2f2f2;
+}
+
+.pagination-link-more {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+
+  background: #ffffff;
 }
 
 /* main over */
 
 /* .button */
 .button {
-  justify-content: center;
-  align-items: center;
-
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -287,7 +321,27 @@ body {
   border-radius: 4px;
 }
 
-/* .button-dark */
+/* .button-light */
+
+.button-light {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  background: #82b3d3;
+}
+
+.variant-favorite-current {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  background: #7db54f;
+}
+
+.button-transparent {
+  background: inherit;
+}
 
 /* .page-footer start */
 
