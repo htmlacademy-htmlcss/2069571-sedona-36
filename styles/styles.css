@@ -166,8 +166,8 @@ img {
 
 .navigation-user-link {
   display: block;
-  min-width: 44px;
-  min-height: 64px;
+  width: 44px;
+  height: 44px;
   padding: 22px 12px;
 }
 
@@ -210,14 +210,12 @@ img {
 }
 
 .page-description {
-  margin-bottom: 21px;
-  padding: 69px 70px;
+  padding: 69px 70px 90px;
 
   text-align: center;
 }
 
 .page-description-rest {
-  margin-bottom: 0;
   padding: 64px 70px;
 }
 
@@ -328,9 +326,8 @@ img {
 
 .booking-button {
   display: inline-block;
-  min-width: 276px;
-  min-height: 36px;
-  padding: 8px 50px;
+  width: 376px;
+  padding: 8px 10px;
 
   font-size: 20px;
   line-height: 36px;
@@ -444,7 +441,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 56px;
+  padding-top: 56px;
 }
 
 .filter-submit {
@@ -504,12 +501,11 @@ img {
 }
 
 .sorting {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   margin-bottom: 20px;
   padding: 25px 70px 20px;
+
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 .sorting-view {
@@ -531,7 +527,6 @@ img {
 .sorting-select {
   width: 292px;
   height: 49px;
-  margin: 0 70px 0 200px;
   padding: 0 40px 0 20px;
 
   font-weight: 400;
@@ -580,7 +575,6 @@ img {
 }
 
 .variants {
-  margin-bottom: 60px;
   padding: 0 70px 60px;
 }
 
@@ -588,19 +582,43 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: 80px;
 }
 
 .variant-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 340px;
+  display: grid;
+  max-width: 340px;
   margin-top: 20px;
   margin-right: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-left: 20px;
 
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+
+  grid-gap: 16px;
+  grid-template-rows: 212px repeat(3, auto);
+}
+
+.variant-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.variant-stats {
+  display: grid;
+
+  grid-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+.variant-text-price {
+  justify-self: end;
 }
 
 .variant-item:nth-child(3n) {
@@ -612,6 +630,9 @@ img {
 }
 
 .variant-link-title {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -622,10 +643,15 @@ img {
 }
 
 .variant-rating {
+  padding: 9px 22px 8px 23px;
+
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .variant-button {
@@ -658,6 +684,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  gap: 8px;
 }
 
 .pagination-current {
