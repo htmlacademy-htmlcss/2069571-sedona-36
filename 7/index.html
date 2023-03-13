@@ -172,6 +172,70 @@
         <span class="visually-hidden">Логотип HTMLAcademy</span>
       </a>
     </footer>
+
+    <section class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <div class="modal-content">
+          <h2 class="modal-title page-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="form-container date">
+              <label class="form-label data-label" for="arrival-date">Дата Заезда:</label>
+              <div class="date-input-container">
+                <input class="date-input form-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="form-container date">
+              <label class="form-label data-label" for="departure-date">Дата Выезда:</label>
+              <div class="date-input-container">
+                <input class="date-input form-input" type="text" name="arrival-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
+                <span class="form-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+
+            <div class="form-container adults">
+              <label class="form-label adults-label" for="adults">Взрослые:</label>
+              <div class="people-input-container">
+                <button class="people-button people-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество человек</span>
+                </button>
+                <input class="people-input people-input-adults form-input" id="adults" type="number" value="2" required>
+                <button class="people-button people-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество человек</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-container children">
+              <div class="tooltip-container">
+                <label class="form-label adults-label" for="children">Дети:</label>
+                <div class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="info-label-children">
+                    <span class="visually-hidden">Дополнительная информация.</span>
+                  </button>
+                  <p class="tooltip-text" id="info-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+              </div>
+              <div class="people-input-container">
+                <button class="people-button people-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество человек</span>
+                </button>
+                <input class="people-input people-input-children form-input" id="children" type="number" value="2" required>
+                <button class="people-button people-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество человек</span>
+                </button>
+              </div>
+            </div>
+
+            <button class="form-button button button-light" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </body>
 
 </html>
