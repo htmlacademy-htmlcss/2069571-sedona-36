@@ -735,9 +735,10 @@ img {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: auto auto 1fr 191px;
-  gap: 20px 70px;
   align-items: start;
+
+  gap: 20px 70px;
+  grid-template-columns: auto auto 1fr 191px;
 }
 
 .filter-group {
@@ -758,15 +759,17 @@ img {
 
 .filter-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
   justify-content: start;
+
+  gap: 16px;
+  grid-template-columns: 1fr;
 }
 
 .filter-item {
   display: grid;
-  grid-template-columns: auto 1fr;
+
   gap: 17px;
+  grid-template-columns: auto 1fr;
 }
 
 .filter-control-label {
@@ -841,9 +844,10 @@ img {
 
 .filter-range-change {
   display: grid;
-  grid-template-columns: repeat(2, 143px);
-  gap: 2px;
   margin-bottom: 35px;
+
+  gap: 2px;
+  grid-template-columns: repeat(2, 143px);
 }
 
 .filter-range-item {
@@ -959,10 +963,11 @@ img {
 
 .sorting {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 20px 68px;
   align-items: center;
   padding: 50px 70px 40px;
+
+  gap: 20px 68px;
+  grid-template-columns: 1fr auto auto;
 }
 
 .sorting-title {
@@ -1014,8 +1019,9 @@ img {
 
 .sorting-view {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+
   gap: 8px;
+  grid-template-columns: repeat(3, auto);
 }
 
 .sorting-link {
@@ -1290,13 +1296,9 @@ img {
   padding: 45px 70px 30px;
 }
 
-/*.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-}*/
-
 .social {
   display: grid;
+
   grid-template-columns: repeat(3, auto);
 }
 
